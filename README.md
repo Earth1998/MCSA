@@ -14,3 +14,45 @@ Predicting drug response and understanding the corresponding pharmacogenomic bio
 ![Model](/imgs/Model.png)
 
 **Fig. 1: The model architecture of MCSA.** MCSA is a continual learning framework that enables drug response prediction and analysis through progressive alignment of local, interpretability, and global contexts in dynamic environments.
+
+# 1 Installation
+
+## 1.1 Clone project repo
+
+```
+ssh:  git@github.com:renshuangxia/ResGitDR.git
+http: https://github.com/renshuangxia/ResGitDR.git
+```
+
+## 1.2 Create conda environment
+
+```
+conda create -n gear python=3.10
+conda activate gear
+```
+For installing conda, please refer to https://docs.anaconda.com/free/miniconda/.
+
+## 1.3 Requirements
+The main dependencies used in this project are as follows (for more information, please see the `environment.yaml` file):
+
+```
+python  3.10
+biopython 1.84
+huggingface-hub 0.26.1
+numpy 2.1.2
+transformers 4.46.0
+tokenizers 0.20.1
+sentencepiece 0.2.0
+torch 2.5.0+cpu
+torchaudio 2.5.0+cpu
+torchvision 0.20.0+cpu
+torch-geometric 2.6.1
+```
+
+> **Note** If you have an available GPU, the accelerated KEIPA can be used to predict peptide-protein binary interactions and pair-specific binding residues. Change the URL below to reflect your version of the cuda toolkit (cu118 for cuda=11.6 and cuda 11.8, cu121 for cuda 12.1). However, do not provide a number greater than your installed cuda toolkit version!
+> 
+> ```
+> pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu118
+> ```
+>
+> For more information on other cuda versions, see the [pytorch installation documentation](https://pytorch.org/).
