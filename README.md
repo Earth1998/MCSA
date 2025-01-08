@@ -94,7 +94,7 @@ python main.py --config=exps/settings.json
 ## Feedback
 If you have questions on how to use MCSA, feel free to raise questions in the [discussions section](https://github.com/Earth1998/MCSA/discussions). If you identify any potential bugs, feel free to raise them in the [issuetracker](https://github.com/Earth1998/MCSA/issues).
 
-In addition, if you have any further questions about MCSA, please feel free to contact us [**thquan@bliulab.net**]
+In addition, if you have any further questions about MCSA, please feel free to contact us [thquan@bliulab.net]
 
 ## Citation
 
