@@ -32,12 +32,12 @@ The main dependencies used in this project are as follows (for more information,
 
 ```
 python  3.10
-biopython 1.84
-huggingface-hub 0.26.1
-numpy 2.1.2
-transformers 4.46.0
-tokenizers 0.20.1
-sentencepiece 0.2.0
+scikit-learn 1.3.0
+scipy 1.9.3
+numpy 1.24.3
+pandas 2.0.3
+openxyl 3.1.5
+nltk 3.9.1
 torch 2.5.0+cpu
 torchaudio 2.5.0+cpu
 torchvision 0.20.0+cpu
