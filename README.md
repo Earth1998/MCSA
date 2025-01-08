@@ -83,7 +83,7 @@ git clone git@github.com:Earth1998/MCSA.git
 cd MCSA/
 ```
 
-**Finally, configure the defalut path of the above tool and the database in `conf.py`. You can change the path of the tool and database by configuring `conf.py` as needed.**
+Finally, configure the defalut path of the above tool and the database in `conf.py`. You can change the path of the tool and database by configuring `conf.py` as needed.
 
 ## Usage
 To use MCSA, run
