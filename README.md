@@ -15,14 +15,12 @@ Code for paper "**Multi-contextual self-alignment framework for interpretable co
   - [Abstract](#Abstract)
   - [Approach](#Approach)
   - [Installation](#Installation)
-  - [Data preparation](#Data-preparation)
-  - [Getting Started](#getting-started)
-    - [Model ckpt](#Model-ckpt)
-    - [MTCL](#MTCL)
-      - [Test](#Test)
-      - [Train](#Train)
-    - [CIL](#CIL)
-      - [Train](#Train)
+    - [Create conda environment](#Create conda environment)
+    - [Requirements](#Requirements)
+    - [Tools and Datasets](#Tools and Datasets)
+    - [Inatsll MCSA](#Inatsll MCSA)
+  - [Usage](#Usage)
+  - [Feedback](#Feedback)
   - [Citation](#Citation)
   - [Acknowledgement](#Acknowledgement)
 
@@ -73,7 +71,7 @@ torch-geometric 2.6.1
 >
 > For more information on other cuda versions, see the [pytorch installation documentation](https://pytorch.org/).
 
-### Tools
+### Tools and Datasets
 Feature extraction tools and databases on which KEIPA relies:
 
 ### Inatsll MCSA
