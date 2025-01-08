@@ -72,7 +72,9 @@ torch-geometric 2.6.1
 > For more information on other cuda versions, see the [pytorch installation documentation](https://pytorch.org/).
 
 ### Tools and Datasets
-Feature extraction tools and databases on which KEIPA relies:
+In this study, various tools were used for feature extraction and downstream analysis, including [TCGAbiolinks](https://www.bioconductor.org/packages/release/bioc/html/TCGAbiolinks.html), [pubchem](https://pubchem.ncbi.nlm.nih.gov/), [DESeq2](https://www.bioconductor.org/packages/release/bioc/html/DESeq2.html), [TIMER](https://cistrome.shinyapps.io/timer/), and [HPAanalyze](https://www.bioconductor.org/packages/release/bioc/html/HPAanalyze.html).
+
+The datasets used in this study come from the Genomics of Drug Sensitivity in Cancer ([GDSC](https://www.cancerrxgene.org/)), the Cancer Cell Line Encyclopedia ([CCLE](https://depmap.org/portal/)), and The Cancer Genome Atlas ([TCGA](https://portal.gdc.cancer.gov/)), which are used to construct drug-incremental learning, cancer-incremental learning, and institute-incremental learning scenarios.
 
 ### Inatsll MCSA
 To install from the development branch run
@@ -84,7 +86,10 @@ cd MCSA/
 **Finally, configure the defalut path of the above tool and the database in `conf.py`. You can change the path of the tool and database by configuring `conf.py` as needed.**
 
 ## Usage
-It takes 2 steps to predict peptide-protein binary interaction and peptide-protein-specific binding residues:
+To use MCSA, run
+```
+python main.py --config=exps/settings.json
+```
 
 ## Feedback
 If you have questions on how to use MCSA, feel free to raise questions in the [discussions section](https://github.com/Earth1998/MCSA/discussions). If you identify any potential bugs, feel free to raise them in the [issuetracker](https://github.com/Earth1998/MCSA/issues).
