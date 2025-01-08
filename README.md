@@ -32,6 +32,8 @@ Predicting drug response and understanding the corresponding pharmacogenomic bio
 
 **Given the complexity and instability of individuals in configuring the environment, we strongly recommend that users use MCSA's online prediction Web server, which can be accessed through **http://bliulab.net/MCSA/**.**
 
+## Approach
+
 ![Model](/imgs/Model.png)
 
 **Fig. 1: The model architecture of MCSA.** MCSA is a continual learning framework that enables drug response prediction and analysis through progressive alignment of local, interpretability, and global contexts in dynamic environments.
