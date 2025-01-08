@@ -19,14 +19,7 @@ Predicting drug response and understanding the corresponding pharmacogenomic bio
 
 # 1 Installation
 
-## 1.1 Clone project repo
-
-```
-ssh:  git@github.com:renshuangxia/ResGitDR.git
-http: https://github.com/renshuangxia/ResGitDR.git
-```
-
-## 1.2 Create conda environment
+## 1.1 Create conda environment
 
 ```
 conda create -n gear python=3.10
@@ -34,7 +27,7 @@ conda activate gear
 ```
 For installing conda, please refer to https://docs.anaconda.com/free/miniconda/.
 
-## 1.3 Requirements
+## 1.2 Requirements
 The main dependencies used in this project are as follows (for more information, please see the `environment.yaml` file):
 
 ```
@@ -59,6 +52,21 @@ torch-geometric 2.6.1
 >
 > For more information on other cuda versions, see the [pytorch installation documentation](https://pytorch.org/).
 
+## 1.3 Tools
+Feature extraction tools and databases on which KEIPA relies:
+
+## 1.4 Inatsll MCSA
+To install from the development branch run
+```
+git clone git@github.com:Earth1998/MCSA.git
+cd MCSA/
+```
+
+**Finally, configure the defalut path of the above tool and the database in `conf.py`. You can change the path of the tool and database by configuring `conf.py` as needed.**
+
+# 2 Usage
+It takes 2 steps to predict peptide-protein binary interaction and peptide-protein-specific binding residues:
+
 # 3 Problem feedback
 If you have questions on how to use MCSA, feel free to raise questions in the [discussions section](https://github.com/Earth1998/MCSA/discussions). If you identify any potential bugs, feel free to raise them in the [issuetracker](https://github.com/Earth1998/MCSA/issues).
 
@@ -68,11 +76,11 @@ In addition, if you have any further questions about MCSA, please feel free to c
 
 If you find our work useful, please cite us at
 ```
-@article{Quan2024Multi,
+@article{Quan2025Multi,
   title={Multi-contextual self-alignment framework for interpretable continual learning in predicting drug response and exploring pharmacogenomic biology},
   author={Tianhong Quan, Ke Yan, Shutao Chen, and Bin Liu},
   journal={submitted},
-  year={2024},
+  year={2025},
   publisher={}
 }
 
