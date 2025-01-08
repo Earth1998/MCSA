@@ -44,7 +44,7 @@ torchvision 0.20.0+cpu
 torch-geometric 2.6.1
 ```
 
-> **Note** If you have an available GPU, the accelerated MCSA can be used to predict peptide-protein binary interactions and pair-specific binding residues. Change the URL below to reflect your version of the cuda toolkit (cu118 for cuda=11.6 and cuda 11.8, cu121 for cuda 12.1). However, do not provide a number greater than your installed cuda toolkit version!
+> **Note** If you have an available GPU, the accelerated MCSA can be used to predict drug response and analyze biological mechanism. Change the URL below to reflect your version of the cuda toolkit (cu118 for cuda=11.6 and cuda 11.8, cu121 for cuda 12.1). However, do not provide a number greater than your installed cuda toolkit version!
 > 
 > ```
 > pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu118
