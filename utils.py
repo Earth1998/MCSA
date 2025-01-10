@@ -81,7 +81,7 @@ def attention_reg(A_old, A):
 # class MyModel(nn.Module):
 #     def __init__(self):
 #         super(MyModel, self).__init__()
-#         # 创建一个权重参数，并注册它
+#         # register weight
 #         self.weight = nn.Parameter(torch.randn(10, 10))
 #         self.register_parameter('weight', self.weight)
 #         self.old_param = {}
@@ -112,7 +112,7 @@ def attention_reg(A_old, A):
 
 def calculate_importance(model, dataloader):
     out = {}
-    # 初始化 Omega(Ω) 矩阵（全部填充0）并加上之前的 guards
+    # initialize Omega(Ω) matrix（with 0）by adding previous guards
     for n, p in model.named_parameters():
         out[n] = p.clone().detach().fill_(0)
         for prev_guard in model.previous_guards_list:
@@ -125,8 +125,8 @@ def calculate_importance(model, dataloader):
         for batch_id, (rna, drug, target) in enumerate(tqdm(dataloader)):
             model.zero_grad()
             pred = model(rna, drug)[0]
-            ##### 生成 Omega(Ω) 矩阵.  #####   
-            # 网络输出 L2范数平方的梯度
+            ##### generate Omega(Ω) matrix.  #####   
+            # network output L2 norm square grads
             loss = torch.mean(torch.sum(pred ** 2, axis=1))
             loss.backward()
             for n, p in model.named_parameters():
