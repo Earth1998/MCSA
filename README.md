@@ -74,7 +74,7 @@ torch-geometric 2.6.1
 ### Tools and Datasets
 In this study, various tools were used for feature extraction and downstream analysis, including [TCGAbiolinks](https://www.bioconductor.org/packages/release/bioc/html/TCGAbiolinks.html), [pubchem](https://pubchem.ncbi.nlm.nih.gov), [DESeq2](https://www.bioconductor.org/packages/release/bioc/html/DESeq2.html), [TIMER](https://cistrome.shinyapps.io/timer), and [HPAanalyze](https://www.bioconductor.org/packages/release/bioc/html/HPAanalyze.html).
 
-The datasets used in this study come from the Genomics of Drug Sensitivity in Cancer ([GDSC](https://www.cancerrxgene.org/)), the Cancer Cell Line Encyclopedia ([CCLE](https://depmap.org/portal/)), and The Cancer Genome Atlas ([TCGA](https://portal.gdc.cancer.gov/)), which are used to construct drug-incremental learning, cancer-incremental learning, and institute-incremental learning scenarios.
+The datasets used in this study come from the Genomics of Drug Sensitivity in Cancer ([GDSC](https://www.cancerrxgene.org)), the Cancer Cell Line Encyclopedia ([CCLE](https://depmap.org/portal)), and The Cancer Genome Atlas ([TCGA](https://portal.gdc.cancer.gov)), which are used to construct drug-incremental learning, cancer-incremental learning, and institute-incremental learning scenarios.
 
 ### Inatsll MCSA
 To install from the development branch run
