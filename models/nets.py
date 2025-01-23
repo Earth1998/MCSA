@@ -189,3 +189,121 @@ class Model(nn.Module):
         centers = km.cluster_centers_
         centers = torch.Tensor(centers).to(self.device)
         self._protos.append(centers)
+
+
+class Distiller(nn.Module):
+
+    def __init__(self):
+        super(Distiller, self).__init__()
+        self.device='cpu'
+        dropout_rate = 0.05
+        self.lin_1 = nn.Linear(536, 256)
+        self.bn1 = nn.BatchNorm1d(256)
+        self.relu_1 = nn.ReLU()
+        self.dropout_1 = nn.Dropout(dropout_rate)
+        self.lin_2 = nn.Linear(256, 128)
+        self.bn2 = nn.BatchNorm1d(128)
+        self.relu_2 = nn.ReLU()
+        self.dropout_2 = nn.Dropout(dropout_rate)
+        self.lin_3 = nn.Linear(128, 64)
+        self.bn3 = nn.BatchNorm1d(64)
+        self.relu_3 = nn.ReLU()
+        self.dropout_3 = nn.Dropout(dropout_rate)
+        self.lin_4 = nn.Linear(64, 128)
+        self.bn4 = nn.BatchNorm1d(128)
+        self.relu_4 = nn.ReLU()
+        self.dropout_4 = nn.Dropout(dropout_rate)
+        self.lin_5 = nn.Linear(128, 256)
+        self.bn5 = nn.BatchNorm1d(256)
+        self.relu_5 = nn.ReLU()
+        self.dropout_5 = nn.Dropout(dropout_rate)
+        self.lin_6 = nn.Linear(256, 256)
+        self.bn6 = nn.BatchNorm1d(256)
+        self.relu_6 = nn.ReLU()
+        self.dropout_6 = nn.Dropout(dropout_rate)
+        self.lin_7 = nn.Linear(256, 536)
+        self.optimizer=torch.optim.AdamW(self.parameters(), lr=0.001)
+    
+    def encode(self, x):
+        x = self.lin_1(x)
+        x = self.bn1(x)
+        x = self.relu_1(x)
+        x = self.dropout_1(x)
+        x = self.lin_2(x)
+        x = self.bn2(x)
+        x = self.relu_2(x)
+        x = self.dropout_2(x)
+        x = self.lin_3(x)
+        x = self.bn3(x)
+        x = self.relu_3(x)
+        x = self.dropout_3(x)
+
+        return x
+    
+    def decode(self, z):
+        z = self.lin_4(z)
+        z = self.bn4(z)
+        z = self.relu_4(z)
+        z = self.dropout_4(z)
+        z = self.lin_5(z)
+        z = self.bn5(z)
+        z = self.relu_5(z)
+        z = self.dropout_5(z)
+        z = self.lin_6(z)
+        z = self.bn6(z)
+        z = self.relu_6(z)
+        z = self.dropout_6(z)
+        output = self.lin_7(z)
+        
+        return output
+    
+    def forward(self, x):
+        z = self.encode(x)
+        output = self.decode(z)
+        return output
+
+
+# distiller = Distiller()
+
+
+class DomainClassifier(nn.Module):
+
+    def __init__(self):
+        super(DomainClassifier, self).__init__()
+        self.device='cpu'
+        dropout_rate = 0.05
+        self.lin_1 = nn.Linear(536, 256)
+        # self.bn1 = nn.BatchNorm1d(256)
+        self.relu_1 = nn.ReLU()
+        self.dropout_1 = nn.Dropout(dropout_rate)
+
+        self.lin_2 = nn.Linear(256, 128)
+        # self.bn2 = nn.BatchNorm1d(128)
+        self.relu_2 = nn.ReLU()
+        self.dropout_2 = nn.Dropout(dropout_rate)
+
+        self.lin_3 = nn.Linear(128, 64)
+        # self.bn3 = nn.BatchNorm1d(64)
+        self.relu_3 = nn.ReLU()
+        self.dropout_3 = nn.Dropout(dropout_rate)
+
+        self.output_layer = nn.Linear(64, 1)
+        self.optimizer=torch.optim.AdamW(self.parameters(), lr=0.001)
+    
+    def forward(self, x):
+        x = self.lin_1(x)
+        # x = self.bn1(x)
+        x = self.relu_1(x)
+        x = self.dropout_1(x)
+        x = self.lin_2(x)
+        # x = self.bn2(x)
+        x = self.relu_2(x)
+        x = self.dropout_2(x)
+        x = self.lin_3(x)
+        # x = self.bn3(x)
+        x = self.relu_3(x)
+        x = self.dropout_3(x)
+
+        output = self.output_layer(x)
+
+        return output
