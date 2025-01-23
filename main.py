@@ -113,9 +113,6 @@ def train(model,dataloader,n_epochs, task_id=0):
         time = timeit.default_timer()
         print('epochs:', model.epoch,'test loss:',round(epoch_loss9,5),'correlation:', round(correlation9,4),'rmse:', round(rmse9,4),'spcc:', round(spcc9,5),'r2:', round(r29, 5),'time:',int((time-start_time)/60),'min')
 
-    model.set_old_param()
-    set_fisher(model, dataloader, t=0)
-
 
 # test function to evaluate model performance on test set
 def test(model,dataloader):
@@ -323,5 +320,7 @@ def continual_train(model,distiller,critic,dataloader,n_epochs, drug_data=None, 
         time = timeit.default_timer()
         print('epochs:', model.epoch,'test loss:',round(epoch_loss9,5),'correlation:', round(correlation9,4),'rmse:', round(rmse9,4),'spcc:', round(spcc9,5),'r2:', round(r29, 5),'time:',int((time-start_time)/60),'min')
 
-    model.set_old_param()
-    set_fisher(model, dataloader, t=task_id)
+
+a_loader = adversarial_sample_generation(trloader, epoch=10, batch_size=256, alpha=25, model=net, sample_limit=100, task_id=1)
+train(net, a_loader, 20)
+continual_train(net, distiller, critic, trloader, 20)
