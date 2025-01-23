@@ -19,6 +19,7 @@ class CustomDataset(Dataset):
         return gene_expression, drug_token, IC50_value
 
 
+# generate adversarial drugs and rnaseq profiles
 def adversarial_sample_generation(train_loader, epoch, batch_size, alpha, model, sample_limit, task_id):
     for k, (rna, drug, target) in enumerate(train_loader):
         if k == 0:
