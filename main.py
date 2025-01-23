@@ -80,7 +80,7 @@ def train(model,dataloader,n_epochs, task_id=0):
         epoch_loss, correlation, rmse, spcc, r2=test(model,teloader[0])
         # scheduler.step(epoch_loss)
         # creating checkpoints by saving model weights once per epoch:
-        # model.save(data_path +'/cl_ewc_10t_3_task{}'.format(task_id))
+        # model.save(data_path +'/cl_10t_3_task{}'.format(task_id))
         loss_lst.append(epoch_loss)
         time = timeit.default_timer()
         print('epochs:', model.epoch,'test loss:',round(epoch_loss,5),'correlation:', round(correlation,4),'rmse:', round(rmse,4),'spcc:', round(spcc,5),'r2:', round(r2, 5),'time:',int((time-start_time)/60),'min')
@@ -266,12 +266,11 @@ def continual_train(model,distiller,critic,dataloader,n_epochs, drug_data=None, 
                 loss=torch.nn.functional.mse_loss(output,target)
                 distill_loss = 10 * nn.functional.mse_loss(latent,platent.detach())
                 # distill_loss1 = 0.5 * torch.nn.functional.mse_loss(output,poutput.detach())
-                ewc_loss = model.criterion(task_id, output, target)
-                multi_loss = loss + distill_loss + ewc_loss + gen_loss
+                multi_loss = loss + distill_loss + gen_loss
                 multi_loss.backward()
                 optimizer.step()
                 # if batch_id%100 ==0: print('batch:',batch_id, 'train loss:',round(loss.item(),3), 'distill loss:', round(distill_loss.item(),3))
-                if batch_id%10 ==0: print('batch:',batch_id, 'train loss:',round(loss.item(),3), 'distill loss:', round(distill_loss.item(),3), 'ewc loss:', round(ewc_loss.item(),3), 'gen loss:', round(gen_loss.item(),3))
+                if batch_id%10 ==0: print('batch:',batch_id, 'train loss:',round(loss.item(),3), 'distill loss:', round(distill_loss.item(),3), 'gen loss:', round(gen_loss.item(),3))
             else:
                 # gen_loss = -torch.mean(critic(latent))
                 # target = torch.cat((target, ssl_result[0].detach()), dim=0)
@@ -282,17 +281,16 @@ def continual_train(model,distiller,critic,dataloader,n_epochs, drug_data=None, 
                 loss=torch.nn.functional.mse_loss(output,target)
                 # distill_loss = 10 * nn.functional.mse_loss(latent,platent.detach())
                 # distill_loss1 = 0.5 * torch.nn.functional.mse_loss(output,poutput.detach())
-                ewc_loss = model.criterion(task_id, output, target)
-                multi_loss = loss + ewc_loss
+                multi_loss = loss
                 multi_loss.backward()
                 optimizer.step()
                 # if batch_id%100 ==0: print('batch:',batch_id, 'train loss:',round(loss.item(),3), 'distill loss:', round(distill_loss.item(),3))
-                if batch_id%10 ==0: print('batch:',batch_id, 'train loss:',round(loss.item(),3), 'ewc loss:', round(ewc_loss.item(),3))
+                if batch_id%10 ==0: print('batch:',batch_id, 'train loss:',round(loss.item(),3))
         model.epoch+=1
         epoch_loss, correlation, rmse, spcc, r2=test(model,teloader[0])
         # scheduler.step(epoch_loss)
         # creating checkpoints by saving model weights once per epoch:
-        # model.save(data_path +'/cl_ewc_10t_3_task{}'.format(task_id))
+        # model.save(data_path +'/cl_10t_3_task{}'.format(task_id))
         loss_lst.append(epoch_loss)
         time = timeit.default_timer()
         print('epochs:', model.epoch,'test loss:',round(epoch_loss,5),'correlation:', round(correlation,4),'rmse:', round(rmse,4),'spcc:', round(spcc,5),'r2:', round(r2, 5),'time:',int((time-start_time)/60),'min')
