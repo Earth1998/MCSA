@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 
 
+# adversarial attacks
 class Attack(object):
     def __init__(self, old_model, new_model, alpha, loader, proto, device, epochs, 
                  rna_min, rna_max, drug_min, drug_max, target):
