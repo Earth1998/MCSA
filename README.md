@@ -28,8 +28,6 @@ Code for paper "**MCSA: deciphering drug responses and mechanisms of action via 
 
 Predicting and understanding the heterogeneity of drug responses is crucial for precision oncology. In this study, we introduce a multi-contextual self-alignment (MCSA) framework that integrates semantic knowledge of pharmacogenomic data, facilitates cross-domain interactions across heterogeneous drugs, transcriptomic profiles, and multi-institutional datasets, and enables genomic interpretation of both targeted therapies and chemotherapeutic agents. The model is designed to function effectively in both dynamic and static data environments, exhibiting adaptability to diverse drugs, cancer types, and sequencing technologies. By leveraging genomic information, MCSA elucidates drug mechanisms of action through cellular state analysis and assesses the efficacy of clinical chemotherapy. Its universality and relevance to clinical outcomes have been validated through applications across various methods and clinical datasets. Overall, MCSA offers a unified framework for precision oncology and drug discovery, underscoring its potential to advance the life sciences.
 
-**Given the complexity and instability of individuals in configuring the environment, we strongly recommend that users use MCSA's online function analysis server, which can be accessed through **http://bliulab.net/MCSA/**.**
-
 ## Approach
 
 ![Model](/imgs/Model.png)
