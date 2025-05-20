@@ -42,7 +42,7 @@ Predicting and understanding the heterogeneity of drug responses is crucial for 
 conda create -n gear python=3.10
 conda activate gear
 ```
-For installing conda, please refer to https://docs.anaconda.com/free/miniconda/.
+For installing conda, please refer to https://www.anaconda.com/download/success.
 
 ### Requirements
 The main dependencies used in this project are as follows (for more information, please see the `environment.yaml` file):
