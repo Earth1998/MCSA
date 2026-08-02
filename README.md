@@ -20,7 +20,7 @@ scikit-learn 1.8.0
 scipy 1.9.3
 numpy 2.2.6
 pandas 2.3.3
-openxyl 3.1.5
+openpyxl 3.1.5
 nltk 3.9.4
 torch 2.5.1
 ```
