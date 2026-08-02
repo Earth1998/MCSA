@@ -17,7 +17,7 @@ The main dependencies used in this project are as follows (for more information,
 
 ```
 scikit-learn 1.8.0
-scipy 1.9.3
+scipy 1.17.1
 numpy 2.2.6
 pandas 2.3.3
 openpyxl 3.1.5
