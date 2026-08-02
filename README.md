@@ -40,3 +40,5 @@ python main.py --config=exps/settings.json
 ```
 
 ## Acknowledgement
+
+We are grateful to the anonymous reviewers for their valuable comments and suggestions.
