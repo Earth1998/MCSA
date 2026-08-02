@@ -1,6 +1,6 @@
 # MCSA: An interpretable multi-context self-alignment framework for continual drug response prediction and pharmacogenomic analysis
 
-This is the official code repository of MoCL.
+This is the official code repository of MCSA.
 
 ## Installation
 
