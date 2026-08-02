@@ -33,8 +33,6 @@ For more information on torch versions, see the [pytorch installation documentat
 
 The data used for drug response prediction can be download from [here](https://doi.org/10.5281/zenodo.21715575).
 
-The datasets used in this study come from the Genomics of Drug Sensitivity in Cancer ([GDSC](https://www.cancerrxgene.org)), the Cancer Cell Line Encyclopedia ([CCLE](https://depmap.org/portal)), and The Cancer Genome Atlas ([TCGA](https://portal.gdc.cancer.gov)), which are used to construct drug-incremental learning, cancer-incremental learning, and institute-incremental learning scenarios.
-
 ### Inatsll MCSA
 To install from the development branch run
 ```
