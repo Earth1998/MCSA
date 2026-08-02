@@ -16,12 +16,12 @@ For installing conda, please refer to https://www.anaconda.com/download/success.
 The main dependencies used in this project are as follows (for more information, please see the `environment.yaml` file):
 
 ```
-scikit-learn 1.3.0
+scikit-learn 1.8.0
 scipy 1.9.3
 numpy 1.24.3
-pandas 2.0.3
+pandas 2.3.3
 openxyl 3.1.5
-nltk 3.9.1
+nltk 3.9.4
 torch 2.5.0+cpu
 ```
 
