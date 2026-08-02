@@ -16,7 +16,6 @@ For installing conda, please refer to https://www.anaconda.com/download/success.
 The main dependencies used in this project are as follows (for more information, please see the `environment.yaml` file):
 
 ```
-python  3.10
 scikit-learn 1.3.0
 scipy 1.9.3
 numpy 1.24.3
