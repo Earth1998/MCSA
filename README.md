@@ -31,7 +31,7 @@ For more information on torch versions, see the [pytorch installation documentat
 
 ### Datasets
 
-In this study, various tools were used for feature extraction and downstream analysis, including [TCGAbiolinks](https://www.bioconductor.org/packages/release/bioc/html/TCGAbiolinks.html).
+The data used for pre-training, including the precomputed descriptors and molecular perturbations, can be download from ([here](https://doi.org/10.5281/zenodo.21715575)).
 
 The datasets used in this study come from the Genomics of Drug Sensitivity in Cancer ([GDSC](https://www.cancerrxgene.org)), the Cancer Cell Line Encyclopedia ([CCLE](https://depmap.org/portal)), and The Cancer Genome Atlas ([TCGA](https://portal.gdc.cancer.gov)), which are used to construct drug-incremental learning, cancer-incremental learning, and institute-incremental learning scenarios.
 
