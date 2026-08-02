@@ -25,13 +25,7 @@ nltk 3.9.4
 torch 2.5.1
 ```
 
-> **Note** If you have an available GPU, the accelerated MCSA can be used to predict drug response and analyze biological mechanism. Change the URL below to reflect your version of the cuda toolkit (cu118 for cuda=11.6 and cuda 11.8, cu121 for cuda 12.1). However, do not provide a number greater than your installed cuda toolkit version!
-> 
-> ```
-> pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu118
-> ```
->
-> For more information on other cuda versions, see the [pytorch installation documentation](https://pytorch.org/).
+For more information on torch versions, see the [pytorch installation documentation](https://pytorch.org/).
 
 ### Datasets
 In this study, various tools were used for feature extraction and downstream analysis, including [TCGAbiolinks](https://www.bioconductor.org/packages/release/bioc/html/TCGAbiolinks.html).
