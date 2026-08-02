@@ -7,8 +7,8 @@ This is the official code repository of MCSA.
 ### Create conda environment
 
 ```
-conda create -n gear python=3.10
-conda activate gear
+conda create -n mcsa python=3.12
+conda activate mcsa
 ```
 For installing conda, please refer to https://www.anaconda.com/download/success.
 
