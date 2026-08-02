@@ -18,7 +18,7 @@ The main dependencies used in this project are as follows (for more information,
 ```
 scikit-learn 1.8.0
 scipy 1.9.3
-numpy 1.24.3
+numpy 2.2.6
 pandas 2.3.3
 openxyl 3.1.5
 nltk 3.9.4
