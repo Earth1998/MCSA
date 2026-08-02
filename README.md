@@ -10,9 +10,11 @@ This is the official code repository of MCSA.
 conda create -n mcsa python=3.12
 conda activate mcsa
 ```
+
 For installing conda, please refer to https://www.anaconda.com/download/success.
 
 ### Requirements
+
 The main dependencies used in this project are as follows (for more information, please see the `environment.yaml` file):
 
 ```
@@ -28,6 +30,7 @@ torch 2.5.1
 For more information on torch versions, see the [pytorch installation documentation](https://pytorch.org/).
 
 ### Datasets
+
 In this study, various tools were used for feature extraction and downstream analysis, including [TCGAbiolinks](https://www.bioconductor.org/packages/release/bioc/html/TCGAbiolinks.html).
 
 The datasets used in this study come from the Genomics of Drug Sensitivity in Cancer ([GDSC](https://www.cancerrxgene.org)), the Cancer Cell Line Encyclopedia ([CCLE](https://depmap.org/portal)), and The Cancer Genome Atlas ([TCGA](https://portal.gdc.cancer.gov)), which are used to construct drug-incremental learning, cancer-incremental learning, and institute-incremental learning scenarios.
