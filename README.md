@@ -1,6 +1,6 @@
 # MCSA
 
-Code for paper "**MCSA: deciphering drug responses and mechanisms of action via dynamic alignment of heterogeneous pharmacogenomic data**" (Submitted).
+**An interpretable multi-context self-alignment framework for continual drug response prediction and pharmacogenomic analysis**
 
 ## Table of Contents
   - [Abstract](#Abstract)
