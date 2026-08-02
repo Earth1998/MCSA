@@ -39,22 +39,4 @@ To use MCSA, run
 python main.py --config=exps/settings.json
 ```
 
-## Feedback
-If you have questions on how to use MCSA, feel free to raise questions in the [discussions section](https://github.com/Earth1998/MCSA/discussions). If you identify any potential bugs, feel free to raise them in the [issuetracker](https://github.com/Earth1998/MCSA/issues).
-
-In addition, if you have any further questions about MCSA, please feel free to contact us [thquan@bliulab.net]
-
-## Citation
-
-If you find our work useful, please cite us at
-```
-@article{Quan2025Multi,
-  title={Multi-contextual self-alignment framework for interpretable continual learning in predicting drug response and exploring pharmacogenomic biology},
-  author={Tianhong Quan, Ke Yan, Shutao Chen, and Bin Liu},
-  journal={submitted},
-  year={2025},
-  publisher={}
-}
-
-```
 ## Acknowledgement
