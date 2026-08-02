@@ -33,15 +33,6 @@ For more information on torch versions, see the [pytorch installation documentat
 
 The datasets can be download from [here](https://doi.org/10.5281/zenodo.21715575).
 
-### Inatsll MCSA
-To install from the development branch run
-```
-git clone git@github.com:Earth1998/MCSA.git
-cd MCSA/
-```
-
-Finally, configure the defalut path of the above tool and the database in `conf.py`. You can change the path of the tool and database by configuring `conf.py` as needed.
-
 ## Usage
 To use MCSA, run
 ```
