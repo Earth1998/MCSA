@@ -31,7 +31,7 @@ For more information on torch versions, see the [pytorch installation documentat
 
 ### Datasets
 
-The data used for drug response prediction can be download from [here](https://doi.org/10.5281/zenodo.21715575).
+The datasets can be download from [here](https://doi.org/10.5281/zenodo.21715575).
 
 ### Inatsll MCSA
 To install from the development branch run
