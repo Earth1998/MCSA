@@ -35,6 +35,9 @@ The datasets can be download from [here](https://doi.org/10.5281/zenodo.21715575
 Data directory structure:
 
 ```text
+cd data/gdsc_csv/
+unzip gdsc.zip
+
 data/
 ├── depmap_csv/
 │   └── depmap_gex_tpm.csv
