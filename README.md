@@ -57,7 +57,6 @@ The models can be download from [here](https://drive.google.com/file/d/11Ms3TFG4
 
 ```
 tar -zxf model.tar.gz
-
 python run.py
 ```
 
