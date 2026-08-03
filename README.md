@@ -42,6 +42,7 @@ data/
 │   └── cell_line_gex_rma.csv
 ├── tcga_gex/
 │   └── tcga_gex_tpm.csv
+└── ...
 ```
 
 ## Usage
