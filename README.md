@@ -43,6 +43,9 @@ data/
 │   └── depmap_gex_tpm.csv
 ├── gdsc_csv/
 │   └── cell_line_gex_rma.csv
+│   └── gdsc_smiles.csv
+│   └── GDSC2_fitted_dose_response_27Oct23.xlsx
+│   └── gdsc2_rma.csv
 ├── tcga_gex/
 │   └── tcga_gex_tpm.csv
 └── ...
