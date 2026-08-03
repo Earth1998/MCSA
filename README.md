@@ -36,12 +36,12 @@ Data directory structure:
 
 ```text
 data/
-├── raw/
-│   ├── train.csv
-│   └── test.csv
-├── processed/
-│   └── clean_data.csv
-└── README.md
+├── depmap_csv/
+│   └── depmap_gex_tpm.csv
+├── gdsc_csv/
+│   └── cell_line_gex_rma.csv
+├── tcga_gex/
+│   └── tcga_gex_tpm.csv
 ```
 
 ## Usage
