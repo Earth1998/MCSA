@@ -36,7 +36,7 @@ The datasets can be download from [here](https://doi.org/10.5281/zenodo.21715575
 ## Usage
 To use MCSA, run
 ```
-python main.py --config=exps/settings.json
+python run.py
 ```
 
 ## Acknowledgement
