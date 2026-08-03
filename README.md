@@ -32,6 +32,17 @@ For more information on torch versions, see the [pytorch installation documentat
 ### Datasets
 
 The datasets can be download from [here](https://doi.org/10.5281/zenodo.21715575).
+Data directory structure:
+
+```text
+data/
+├── raw/
+│   ├── train.csv
+│   └── test.csv
+├── processed/
+│   └── clean_data.csv
+└── README.md
+```
 
 ## Usage
 To use MCSA, run
