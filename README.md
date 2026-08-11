@@ -60,7 +60,7 @@ The implementations of the interpretability-consistency regularization (CREG/IRS
 The implementations of the prototype generation can be found in 'prototype.py'.
 The implementations of the prototype-based mixture-of-expert module (PMOE) can be found in 'pmoe.py'.
 The implementations of the data loading can be found in 'utils.py', 'utils_bf.py', 'utils_df.py' and 'splitter.py'.
-The implementations of the drug encoder can be found in 'pmodel.py'.
+The implementations of the drug encoder and autoencoder can be found in 'pmodel.py'.
 ```
 
 ### Usage
