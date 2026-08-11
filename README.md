@@ -57,7 +57,7 @@ data/
 The implementations of the continual self-supervised adversarial learning/perturbation module (CSSAL) can be found in 'uad.py' and 'utils_adv.py'.
 The implementations of the plug-in pharmacogenomic interpretable module (PIPGIM) can be found in 'pipgim.py'.
 The implementations of the interpretability-consistency regularization (CREG/IRST) can be found in 'pipgim.py'.
-The implementations of the prototypes can be found in 'prototype.py'.
+The implementations of the prototype generation can be found in 'prototype.py'.
 The implementations of the prototype-based mixture-of-expert module (PMOE) can be found in 'pmoe.py'.
 The implementations of the data loading can be found in 'utils.py', 'utils_bf.py' and 'splitter.py'.
 The implementations of the drug encoder can be found in 'pmodel.py'.
