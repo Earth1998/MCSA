@@ -57,6 +57,7 @@ data/
 The implementations of the continual self-supervised adversarial learning module (CSSAL) can be found in 'uad.py'.
 The implementations of the plug-in pharmacogenomic interpretable module (PIPGIM) can be found in 'pipgim.py'.
 The implementations of the interpretability-consistency regularization (CREG/IRST) can be found in 'pipgim.py'.
+The implementations of the prototypes can be found in 'prototype.py'.
 ```
 
 ### Usage
