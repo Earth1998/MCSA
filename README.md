@@ -58,7 +58,7 @@ The implementations of the continual self-supervised adversarial learning module
 The implementations of the plug-in pharmacogenomic interpretable module (PIPGIM) can be found in 'pipgim.py'.
 The implementations of the interpretability-consistency regularization (CREG/IRST) can be found in 'pipgim.py'.
 The implementations of the prototypes can be found in 'prototype.py'.
-The implementations of the prototype-based mixture-of-expert module (PMOE) can be found in 'prototype.py'.
+The implementations of the prototype-based mixture-of-expert module (PMOE) can be found in 'pmoe.py'.
 ```
 
 ### Usage
