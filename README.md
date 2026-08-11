@@ -72,6 +72,11 @@ tar -zxf model.tar.gz
 python run.py
 ```
 
+### Contact
+
+If you have any questions, please feel free to contact thquan@bliulab.net.
+
+
 ## Acknowledgement
 
 We are grateful to the anonymous reviewers for their valuable comments and suggestions.
