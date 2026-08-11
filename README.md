@@ -72,7 +72,7 @@ tar -zxf model.tar.gz
 python run.py
 ```
 
-Please organize the datasets according to the data directory structure. For tcga, the models can be download from [here](https://drive.google.com/file/d/11Ms3TFG4YiOgjI5GBeoTzTzjiyYXQdeK/view?usp=drive_link).
+Please organize the datasets according to the data directory structure. For tcga, the models can be download from [here](https://drive.google.com/file/d/1rAZWQood2527KeeuqhLpkcxhi0g07Psw/view?usp=sharing).
 
 ```
 tar -zxf model_z.tar.gz
