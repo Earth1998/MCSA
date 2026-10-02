@@ -65,7 +65,7 @@ The implementations of the drug encoder and autoencoder can be found in 'pmodel.
 
 ### Usage
 
-Please organize the datasets according to the data directory structure. The models can be download from [here](https://drive.google.com/file/d/11Ms3TFG4YiOgjI5GBeoTzTzjiyYXQdeK/view?usp=drive_link).
+Please organize the datasets according to the data directory structure. The models can be download from [here](https://drive.google.com/file/d/11Ms3TFG4YiOgjI5GBeoTzTzjiyYXQdeK/view?usp=sharing).
 
 ```
 tar -zxf model.tar.gz
